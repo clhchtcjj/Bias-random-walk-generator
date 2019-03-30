@@ -52,7 +52,7 @@ class Graph():
 		random.shuffle(nodes)
 		for node in nodes:
 			# if max(self.minT, int(math.floor(self.authority[node] * self.maxT)))> 1:
-			print(self.authority[node], max(self.minT, int(math.floor(self.authority[node] * self.maxT))))
+			# print(self.authority[node], max(self.minT, int(math.floor(self.authority[node] * self.maxT))))
 			for walk_iter in range(max(self.minT, int(math.floor(self.authority[node] * self.maxT)))):
 				walks.append(self.bias_walk(start_node=node))
 		random.shuffle(walks)
